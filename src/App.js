@@ -305,7 +305,7 @@ const WOTSApp = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
-                  style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
+                  style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66', borderStyle: 'solid' }}
                   placeholder="demo@wordonthestreet.com"
                 />
               </div>
@@ -319,7 +319,7 @@ const WOTSApp = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
-                  style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
+                  style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66', borderStyle: 'solid' }}
                   placeholder="Demo2024!"
                 />
               </div>
@@ -368,12 +368,16 @@ const WOTSApp = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
-            <div className="py-2 px-3 rounded-lg" style={{ backgroundColor: '#dfbd66' }}>
+            <button 
+              onClick={() => setCurrentPage('roadmap')}
+              className="py-2 px-3 rounded-lg cursor-pointer transition-all hover:opacity-80"
+              style={{ backgroundColor: '#dfbd66' }}
+            >
               <div className="font-bold text-center leading-tight" style={{ color: '#15234a', fontFamily: 'Poppins, sans-serif', fontSize: '10px' }}>
                 <div>WORD ON</div>
                 <div>THE STREET</div>
               </div>
-            </div>
+            </button>
             <span className="text-white font-bold text-lg hidden md:block" style={{ fontFamily: 'Poppins, sans-serif' }}>
               Word On The Street
             </span>
@@ -564,7 +568,7 @@ const WOTSApp = () => {
             onChange={(e) => handleInputChange(name, e.target.value)}
             required={required}
             className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
-            style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
+            style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66', borderStyle: 'solid' }}
           >
             <option value="">Select...</option>
             {options.map(opt => (
@@ -579,7 +583,7 @@ const WOTSApp = () => {
             placeholder={placeholder}
             rows={3}
             className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
-            style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
+            style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66', borderStyle: 'solid' }}
           />
         ) : (
           <input
@@ -589,7 +593,7 @@ const WOTSApp = () => {
             required={required}
             placeholder={placeholder}
             className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
-            style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
+            style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66', borderStyle: 'solid' }}
           />
         )}
       </div>
