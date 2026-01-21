@@ -304,7 +304,7 @@ const WOTSApp = () => {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
                   style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
                   placeholder="demo@wordonthestreet.com"
                 />
@@ -318,7 +318,7 @@ const WOTSApp = () => {
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
                   style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
                   placeholder="Demo2024!"
                 />
@@ -563,7 +563,7 @@ const WOTSApp = () => {
             value={applicationData[name]}
             onChange={(e) => handleInputChange(name, e.target.value)}
             required={required}
-            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none"
+            className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
             style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
           >
             <option value="">Select...</option>
@@ -578,7 +578,7 @@ const WOTSApp = () => {
             required={required}
             placeholder={placeholder}
             rows={3}
-            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none"
+            className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
             style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
           />
         ) : (
@@ -588,7 +588,7 @@ const WOTSApp = () => {
             onChange={(e) => handleInputChange(name, e.target.value)}
             required={required}
             placeholder={placeholder}
-            className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:outline-none"
+            className="w-full px-4 py-3 rounded-xl border-2 focus:outline-none"
             style={{ fontFamily: 'Poppins, sans-serif', borderColor: '#dfbd66' }}
           />
         )}
