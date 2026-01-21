@@ -328,7 +328,7 @@ const WOTSApp = () => {
                 onClick={doLogin}
                 type="button"
                 className="w-full py-3 rounded-xl text-white font-bold text-lg transition-all hover:opacity-90"
-                style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+                style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
               >
                 Sign In
               </button>
@@ -351,7 +351,7 @@ const WOTSApp = () => {
                   setPassword('Demo2024!');
                 }}
                 className="w-full py-2 rounded-lg text-sm font-semibold transition-all hover:opacity-90"
-                style={{ backgroundColor: '#dfbd66', color: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+                style={{ backgroundColor: '#dfbd66', color: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
               >
                 Fill Demo Credentials
               </button>
@@ -371,7 +371,7 @@ const WOTSApp = () => {
             <button 
               onClick={() => setCurrentPage('roadmap')}
               className="py-2 px-3 rounded-lg cursor-pointer transition-all hover:opacity-80"
-              style={{ backgroundColor: '#dfbd66' }}
+              style={{ backgroundColor: '#dfbd66', border: 'none' }}
             >
               <div className="font-bold text-center leading-tight" style={{ color: '#15234a', fontFamily: 'Poppins, sans-serif', fontSize: '10px' }}>
                 <div>WORD ON</div>
@@ -387,35 +387,35 @@ const WOTSApp = () => {
             <button
               onClick={() => setCurrentPage('roadmap')}
               className={`px-4 py-2 rounded-lg font-semibold transition-all ${currentPage === 'roadmap' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'roadmap' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'roadmap' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Roadmap
             </button>
             <button
               onClick={() => setCurrentPage('application')}
               className={`px-4 py-2 rounded-lg font-semibold transition-all ${currentPage === 'application' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'application' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'application' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Application
             </button>
             <button
               onClick={() => setCurrentPage('loans')}
               className={`px-4 py-2 rounded-lg font-semibold transition-all ${currentPage === 'loans' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'loans' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'loans' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Loans
             </button>
             <button
               onClick={() => setCurrentPage('documents')}
               className={`px-4 py-2 rounded-lg font-semibold transition-all ${currentPage === 'documents' ? 'text-white' : 'text-gray-300 hover:text-white'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'documents' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'documents' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Documents
             </button>
             <button
               onClick={handleLogout}
               className="ml-4 px-4 py-2 rounded-lg font-semibold text-white hover:opacity-80 transition-all flex items-center space-x-2"
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: '#dfbd66' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: '#dfbd66', border: 'none' }}
             >
               <LogOut size={18} />
               <span>Logout</span>
@@ -435,35 +435,35 @@ const WOTSApp = () => {
             <button
               onClick={() => { setCurrentPage('roadmap'); setMobileMenuOpen(false); }}
               className={`w-full text-left px-4 py-2 rounded-lg font-semibold ${currentPage === 'roadmap' ? 'text-white' : 'text-gray-300'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'roadmap' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'roadmap' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Roadmap
             </button>
             <button
               onClick={() => { setCurrentPage('application'); setMobileMenuOpen(false); }}
               className={`w-full text-left px-4 py-2 rounded-lg font-semibold ${currentPage === 'application' ? 'text-white' : 'text-gray-300'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'application' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'application' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Application
             </button>
             <button
               onClick={() => { setCurrentPage('loans'); setMobileMenuOpen(false); }}
               className={`w-full text-left px-4 py-2 rounded-lg font-semibold ${currentPage === 'loans' ? 'text-white' : 'text-gray-300'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'loans' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'loans' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Loans
             </button>
             <button
               onClick={() => { setCurrentPage('documents'); setMobileMenuOpen(false); }}
               className={`w-full text-left px-4 py-2 rounded-lg font-semibold ${currentPage === 'documents' ? 'text-white' : 'text-gray-300'}`}
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'documents' ? '#dfbd66' : 'transparent' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: currentPage === 'documents' ? '#dfbd66' : 'transparent', border: 'none' }}
             >
               Documents
             </button>
             <button
               onClick={handleLogout}
               className="w-full text-left px-4 py-2 rounded-lg font-semibold text-white flex items-center space-x-2"
-              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: '#dfbd66' }}
+              style={{ fontFamily: 'Poppins, sans-serif', backgroundColor: '#dfbd66', border: 'none' }}
             >
               <LogOut size={18} />
               <span>Logout</span>
@@ -615,7 +615,7 @@ const WOTSApp = () => {
               type="button"
               onClick={fillDemoData}
               className="mt-4 md:mt-0 px-6 py-3 rounded-xl font-bold transition-all hover:opacity-90 whitespace-nowrap"
-              style={{ backgroundColor: '#dfbd66', color: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+              style={{ backgroundColor: '#dfbd66', color: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
             >
               Fill Demo Data
             </button>
@@ -757,7 +757,7 @@ const WOTSApp = () => {
                     }
                   }}
                   className="w-full py-4 rounded-xl text-white font-bold text-lg transition-all hover:opacity-90"
-                  style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+                  style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
                 >
                   Submit Application
                 </button>
@@ -788,7 +788,7 @@ const WOTSApp = () => {
             <button
               onClick={() => setCurrentPage('application')}
               className="mt-4 px-6 py-3 rounded-xl text-white font-bold transition-all hover:opacity-90"
-              style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+              style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
             >
               Go to Application
             </button>
@@ -841,7 +841,8 @@ const WOTSApp = () => {
                     className="w-full py-3 rounded-xl text-white font-bold transition-all hover:opacity-90 disabled:opacity-50"
                     style={{ 
                       backgroundColor: selectedLoan === loan.id ? '#15234a' : '#dfbd66',
-                      fontFamily: 'Poppins, sans-serif'
+                      fontFamily: 'Poppins, sans-serif',
+                      border: 'none'
                     }}
                   >
                     {selectedLoan === loan.id ? 'Selected ✓' : 'Accept Offer'}
@@ -889,7 +890,7 @@ const WOTSApp = () => {
                   onClick={() => handleFileUpload(docType)}
                   disabled={uploaded}
                   className="px-4 py-2 rounded-lg text-white font-semibold transition-all hover:opacity-90 disabled:opacity-50"
-                  style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+                  style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
                 >
                   {uploaded ? 'Done' : 'Upload'}
                 </button>
@@ -931,7 +932,7 @@ const WOTSApp = () => {
         <button
           onClick={completeDocuments}
           className="w-full py-4 rounded-xl text-white font-bold text-lg transition-all hover:opacity-90"
-          style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif' }}
+          style={{ backgroundColor: '#15234a', fontFamily: 'Poppins, sans-serif', border: 'none' }}
         >
           Complete Documents
         </button>
